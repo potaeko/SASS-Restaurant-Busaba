@@ -1,0 +1,68 @@
+//reusable components
+.logo {
+    font-size: 70px;
+    color: $color-primary;
+    //insteaed of using "block", we need to us "flex" to center it
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    @include flexLayout;
+
+    width: 110px;
+    height:100px;
+    border: 3px solid $color-primary;
+    //circle around icon
+    border-radius: 50%;
+    //space logo and restaurant name
+    margin-right: 20px;
+}
+
+.main-name {
+    font-family: $font-nunito;
+    font-size: 50px;
+    color: $color-secondary;
+    @include textStyles;
+}
+
+.sub-name {
+    font-family: $font-josefinSans;
+    font-size: 18px;
+    color: $color-secondary;
+    text-align: center;
+    @include textStyles
+}
+
+.main-heading {
+    font-family: $font-dancingScript;
+    font-size: 100px;
+    font-weight: 300;
+    color: $color-primary;
+    margin-bottom: 40px;
+}
+
+.sub-heading {
+    font-family: $font-josefinSans;
+    font-size: 60px;
+    font-weight: 300;
+    color: $color-secondary;
+    margin-bottom: 80px;
+}
+
+.main-btn {
+    width: 170px;
+    height: 45px;
+    font-family: $font-josefinSans;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $color-primary;
+    background-color: transparent;
+    border: 1px solid $color-primary;
+    outline:none;
+    cursor: pointer;
+    transition: all .4s;
+    &:hover {
+        background-color: $color-primary;
+        color: $color-dark;
+    }
+} 
