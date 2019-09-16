@@ -1,5 +1,134 @@
 
-.header{
+//Navbar
+.navbar {
+    position: relative;
+    z-index: 200;
+
+    &-navigation {
+        display: flex;
+        &-left {
+            width: 50vw;
+            height: 100vh;
+            background-color: $color-dark;
+            position: fixed;
+            //left: 0;
+            //hide navbar
+            left: -50vw;
+            //customtransiton
+            //transition with checkedbox:checked left property
+            transition: left .8s cubic-bezier(1, 0, 0, 1);
+            -webkit-transition: left .8s cubic-bezier(1, 0, 0, 1);
+            -moz-transition: left .8s cubic-bezier(1, 0, 0, 1);
+            -ms-transition: left .8s cubic-bezier(1, 0, 0, 1);
+            -o-transition: left .8s cubic-bezier(1, 0, 0, 1);
+
+            .left-img {
+                //width: 300px;
+                width: 50%;
+                position: absolute;
+                box-shadow: 0 15px 60px rgba($color-black, .4);
+                opacity: .7;
+                border-radius:  10px;
+            }
+
+            .left-img-1 {
+                top: 15%;
+                left: 15%;
+            }
+            .left-img-2 {
+                top: 35%;
+                left: 25%;
+            }
+            .left-img-3 {
+                top: 55%;
+                left: 35%;
+            }
+        }
+
+        &-right {
+            width: 50vw;
+            height: 100vh;
+            background-color: #1f1d1d;
+            position: fixed;
+            //right: 0;
+            //hide navbar
+            right: -50vw;
+            //center            
+            @include flexLayout;
+            //transition with checkedbox:checked right property
+            transition: right .8s cubic-bezier(1, 0, 0, 1);
+            -webkit-transition: right .8s cubic-bezier(1, 0, 0, 1);
+            -moz-transition: right .8s cubic-bezier(1, 0, 0, 1);
+            -ms-transition: right .8s cubic-bezier(1, 0, 0, 1);
+            -o-transition: right .8s cubic-bezier(1, 0, 0, 1);
+}
+
+        .nav-list {
+            &-item{
+            list-style: none;
+            }
+
+            &-link {
+                font-family: $font-dancingScript;
+                font-size: 50px;
+                @include textStyles(capitalize);
+                color: $color-secondary;
+                text-decoration: none;
+                //<a>isinline-blockcan'tnotusetext-algindisplay: block;
+                text-align: center;
+                transition: all .5s;
+
+                &:hover {
+                    color: $color-primary;
+                    letter-spacing: 4px;
+                }
+            }
+        }
+    };
+};
+
+//show navbar
+//we need todefine left and right side, using CSS combination called General Sibling Combinator ~
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-left {
+    //hidden left side will show
+    left:0;
+}
+
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-right {
+    //hidden right side will show
+    right: 0;
+}
+
+//rotate whole menu icon, clockwise 
+.checkbox:checked ~ .hamburger-menu .menu {
+    transform: rotateZ(90deg);
+    -webkit-transform: rotateZ(90deg);
+    -moz-transform: rotateZ(90deg);
+    -ms-transform: rotateZ(90deg);
+    -o-transform: rotateZ(90deg);
+}
+//line 2 rotate to -40, reverse clockwise
+.checkbox:checked ~ .hamburger-menu .menu-line-1 {
+    transform: rotateZ(-40deg);
+    -webkit-transform: rotateZ(-40deg);
+    -moz-transform: rotateZ(-40deg);
+    -ms-transform: rotateZ(-40deg);
+    -o-transform: rotateZ(-40deg);
+}
+//line 2 disappear
+.checkbox:checked ~ .hamburger-menu .menu-line-2 {
+    opacity: 0;
+}
+//line 3 rotate to 40, clockwise
+.checkbox:checked ~ .hamburger-menu .menu-line-3 {
+    transform: rotateZ(40deg);
+    -webkit-transform: rotateZ(40deg);
+    -moz-transform: rotateZ(40deg);
+    -ms-transform: rotateZ(40deg);
+    -o-transform: rotateZ(40deg);
+}
+
+.header {
     width: 100%;
     //viewport height
     height: 100vh;
@@ -23,11 +152,11 @@
         // color: #fff;
         @include centering(50%);
     }
-
-}
+};
 
 // About us section
 .about-us {
+    //height of section
     height: 90vh;
     display: flex;
     align-items: center;
@@ -48,7 +177,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0 100px;
+        padding: 0px 100px;
         box-sizing: border-box;
 
         .stars {
@@ -63,7 +192,7 @@
 
         .description {
             font-family: $font-josefinSans;
-            font-size: 25px;
+            font-size: 20px;
             font-style: italic;
             color: $color-secondary;
             text-align: justify;
@@ -73,12 +202,54 @@
             }
         }
     }
-}
+};
 
 //Gallery
 .gallery {
     .cards-wrapper {
         display:flex;
         flex-wrap: wrap;
+    }
+}
+
+//Footer
+.footer {
+    padding: 70px 0;
+    @include flexLayout;
+    flex-direction: column;
+
+    &-header {
+        display:flex;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+
+    .social-media {
+        display: flex;
+        width: 300px;
+        justify-content: space-between;
+        margin-bottom: 70px;
+
+        &-item {
+            list-style: none;
+        }
+
+        &-link {
+            text-decoration: none;
+            font-size: 50px;
+            color: $color-secondary;
+            transition: color .7s;
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+
+    &-copyright-paragraph {
+        font-family: $font-josefinSans;
+        font-size: 18px;
+        color: $color-secondary;
+        @include textStyles(capitalize);
     }
 }
