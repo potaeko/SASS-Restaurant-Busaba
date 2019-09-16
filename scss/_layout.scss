@@ -193,14 +193,18 @@
 
 // About us section
 .about-us {
-    //height of section
-    height: 100vh;
+    //height of about-us section
+    // height: 90vh;
+    flex-basis: 90%;
     display: flex;
+    flex-wrap:wrap;
     align-items: center;
+    padding: 20px 0;
 
     @media(max-width: 990px){
+        display:flex;
         font-size: 35px;
-        height: 70vh;
+        flex-basis: 70%;
     }
 
     &-left{
@@ -224,7 +228,8 @@
 
     &-right {
         width: 60%;
-        display: flex;
+        display:flex;
+        flex-wrap:wrap;
         flex-direction: column;
         align-items: center;
         padding: 0 100px;

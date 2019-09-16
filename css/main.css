@@ -149,13 +149,16 @@ body {
     transform: translate(-50%, -50%); }
 
 .about-us {
-  height: 100vh;
+  flex-basis: 90%;
   display: flex;
-  align-items: center; }
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px 0; }
   @media (max-width: 990px) {
     .about-us {
+      display: flex;
       font-size: 35px;
-      height: 70vh; } }
+      flex-basis: 70%; } }
   .about-us-left {
     width: 40%;
     position: relative;
@@ -172,6 +175,7 @@ body {
   .about-us-right {
     width: 60%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     padding: 0 100px;
