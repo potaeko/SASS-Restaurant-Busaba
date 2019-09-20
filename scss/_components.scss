@@ -271,6 +271,16 @@
             border-radius: 30px;
             outline: none;
             cursor: pointer;
+            transition: all .2s;
+            -webkit-transition: all .2s;
+            -moz-transition: all .2s;
+            -ms-transition: all .2s;
+            -o-transition: all .2s;
+            
+            &:hover{
+                color: $color-dark;
+                letter-spacing: 2px;
+            }
 
             @media(max-width: 900px){
                 font-size: 12px;

@@ -544,7 +544,15 @@ body {
       border: 1px solid #d3ab55;
       border-radius: 30px;
       outline: none;
-      cursor: pointer; }
+      cursor: pointer;
+      transition: all .2s;
+      -webkit-transition: all .2s;
+      -moz-transition: all .2s;
+      -ms-transition: all .2s;
+      -o-transition: all .2s; }
+      .card-overlay-btn:hover {
+        color: #262626;
+        letter-spacing: 2px; }
       @media (max-width: 900px) {
         .card-overlay-btn {
           font-size: 12px;
