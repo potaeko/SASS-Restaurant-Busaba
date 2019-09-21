@@ -1,0 +1,36 @@
+.main-heading-wrapper {
+    font-family: $font-dancingScript;
+    font-size: 80px;
+    font-weight: 300;
+    color: $color-primary;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.main-btn-top{
+    @include mainBtn(400px);
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-dark;
+    }
+
+    @media(max-width:350px){
+        font-size: 9px;
+        margin-left: 15px;
+    }
+}
+
+.main-btn-bottom{
+    @include mainBtn(400px);
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-dark;
+    }
+
+    @media(max-width:350px){
+        font-size: 9px;
+    }
+    
+}

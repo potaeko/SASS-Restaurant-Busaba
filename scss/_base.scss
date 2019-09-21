@@ -29,6 +29,21 @@ $font-nunito: 'Nunito', sans-serif;
     left:50%;
     transform: translate(-50%,-50%);
 }
+//button
+@mixin mainBtn($width){
+    width: $width;
+    height: 45px;
+    font-family: $font-josefinSans;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $color-primary;
+    background-color: transparent;
+    border: 1px solid $color-primary;
+    outline:none;
+    cursor: pointer;
+    transition: all .4s;
+}
 
 %fullSpace {
     width: 100%;
