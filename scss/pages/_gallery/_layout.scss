@@ -1,0 +1,39 @@
+
+
+//Header
+.header-gallery {
+    width: 100%;
+    //viewport height
+    height: 80vh;
+    //path according to main.css
+    background: linear-gradient(rgba($color-black, .8), rgba($color-black, .6)) , url(../images/bg.jpeg) center no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .brand {
+        display: flex;
+        @include centering(15%);
+        align-items: center;
+
+        @media(max-width: 500px){
+            @include centering(12%);
+        }
+}
+
+    &-banner {
+        text-align: center;
+        // color: #fff;
+        @include centering(50%);
+    }
+
+};
+
+//Gallery
+.gallery-img {
+    .cards-wrapper {
+        display:flex;
+        flex-wrap: wrap;
+        padding-right: 40px;
+        padding-bottom: 40px;
+    }
+}

@@ -1,0 +1,17 @@
+
+//gallery
+.card-gallery {
+    width: 50%;
+    height: 50vw;
+    position: relative;
+    //hide orange overlay cover
+    overflow: hidden;
+
+    //make img fit in
+    &-img {
+        @extend %fullSpace;
+        object-fit: cover;
+        opacity: 0.5;
+        padding: 40px;
+    }
+}
