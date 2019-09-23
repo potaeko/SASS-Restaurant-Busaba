@@ -1,121 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link
-        href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Josefin+Sans:300,400,600,700|Nunito:300,400,600,700"
-        rel="stylesheet">
-        <link rel="stylesheet" href="../css/main.css">
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Josefin+Sans:300,400,600,700|Nunito:300,400,600,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
     <title>Restaurant "Busaba"</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Navbar -->
     <nav class="navbar">
-        <input type="checkbox" id="check" class="checkbox" hidden>
-        <div class="hamburger-menu">
-            <label for="check" class="menu">
-                <div class="menu-line menu-line-1"></div>
-                <div class="menu-line menu-line-2"></div>
-                <div class="menu-line menu-line-3"></div>
-            </label>
+      <input type="checkbox" id="check" class="checkbox" hidden />
+      <div class="hamburger-menu">
+        <label for="check" class="menu">
+          <div class="menu-line menu-line-1"></div>
+          <div class="menu-line menu-line-2"></div>
+          <div class="menu-line menu-line-3"></div>
+        </label>
+      </div>
+
+      <div class="navbar-navigation">
+        <div class="navbar-navigation-left">
+          <img
+            src="../images/nav-img-1.jpeg"
+            class="left-img left-img-1"
+            alt=""
+          />
+          <img
+            src="../images/nav-img-2.jpeg"
+            class="left-img left-img-2"
+            alt=""
+          />
+          <img
+            src="../images/nav-img-3.jpeg"
+            class="left-img left-img-3"
+            alt=""
+          />
         </div>
 
-        <div class="navbar-navigation">
-            <div class="navbar-navigation-left">
-                <img src="../images/nav-img-1.jpeg" class="left-img left-img-1" alt="">
-                <img src="../images/nav-img-2.jpeg" class="left-img left-img-2" alt="">
-                <img src="../images/nav-img-3.jpeg" class="left-img left-img-3" alt="">
-            </div>
-
-            <div class="navbar-navigation-right">
-                <ul class="nav-list">
-                    <li class="nav-list-item">
-                        <a href="../index.html" class="nav-list-link">Home</a>
-                    </li>
-                    <li class="nav-list-item">
-                        <a href="story.html" class="nav-list-link">Our Story</a>
-                    </li>
-                    <li class="nav-list-item">
-                        <a href="menu.html" class="nav-list-link">Menu</a>
-                    </li>
-                    <li class="nav-list-item">
-                        <a href="services.html" class="nav-list-link">Events & Services</a>
-                    </li>
-                    <li class="nav-list-item">
-                        <a href="gallery.html" class="nav-list-link">Gallery</a>
-                    </li>
-                    <li class="nav-list-item">
-                        <a href="contact.html" class="nav-list-link">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="navbar-navigation-right">
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a href="../index.html" class="nav-list-link">Home</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="story.html" class="nav-list-link">Our Story</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="menu.html" class="nav-list-link">Menu</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="services.html" class="nav-list-link"
+                >Events & Services</a
+              >
+            </li>
+            <li class="nav-list-item">
+              <a href="gallery.html" class="nav-list-link">Gallery</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="contact.html" class="nav-list-link">Contact Us</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
     <!-- End of Navbar -->
 
     <!-- Header -->
     <header class="header">
-        <div class="brand">
-            <a href="#" class="logo"><i class="fas fa-utensils"></i></a>
-            <div>
-                <h1 class="main-name">Busaba</h1>
-                <p class="sub-name">Restaurant</p>
-            </div>
+      <div class="brand">
+        <a href="#" class="logo"><i class="fas fa-utensils"></i></a>
+        <div>
+          <h1 class="main-name">Busaba</h1>
+          <p class="sub-name">Restaurant</p>
         </div>
+      </div>
+      <div class="header-banner">
+        <h1 class="main-heading">Events & Services</h1>
+        <h3 class="sub-heading">Special events for you</h3>
+        <button
+          type="button"
+          onclick="window.location.href='contact.html'"
+          class="main-btn"
+        >
+          Contact Us
+        </button>
+      </div>
     </header>
     <!-- End of Header -->
 
+    <!-- Events -->
+    <section class="about-event">
+      <!-- event #1 -->
+      <div class="about-event-left">
+        <img src="../images/event-img-1.jpg" />
+      </div>
+      <div class="about-event-right">
+        <h2 class="main-event-heading">Deal Of The Day</h2>
+        <p class="description">
+          special dishes depending on the season, now available. Feature seafood
+          in the spring with thick, meaty stews in the winter. Keep our menu
+          exciting and ingredients fresh, our customer can look forward to every
+          month deal..
+        </p>
+        <div class="stars">
+          <i class="fas fa-star-of-life star"></i>
+          <i class="fas fa-star-of-life star"></i>
+          <i class="fas fa-star-of-life star"></i>
+        </div>
+      </div>
+
+      <!-- event #2 -->
+      <div class="about-event-left">
+        <img src="../images/event-img-2.jpg" />
+      </div>
+      <div class="about-event-right">
+        <h2 class="main-event-heading">Happy hour. Buy One, Get One.</h2>
+
+        <p class="description">
+          buy one get one free drinks, appetizers or desserts on our happy hour.
+          In Our Bar & Lounge 4pm to 6pm Monday - Friday , 5pm to 7pm Saturdays
+        </p>
+        <div class="stars">
+          <i class="fas fa-star-of-life star"></i>
+          <i class="fas fa-star-of-life star"></i>
+          <i class="fas fa-star-of-life star"></i>
+        </div>
+      </div>
+
+      <!-- event #3 -->
+      <div class="about-event-left">
+        <img src="../images/event-img-3.jpg" />
+      </div>
+      <div class="about-event-right">
+        <h2 class="main-event-heading">Singles' Night</h2>
+        <p class="description">
+          hosting a singles'night to meet new people at our restaurant. Speed
+          dating can be a fun spin on this event. Every forth friday of the month.
+        </p>
+        <div class="stars">
+          <i class="fas fa-star-of-life star"></i>
+          <i class="fas fa-star-of-life star"></i>
+          <i class="fas fa-star-of-life star"></i>
+        </div>
+      </div>
+
+      <!-- event #4 -->
+      <div class="about-event-left">
+        <img src="../images/event-img-4.jpg" />
+      </div>
+      <div class="about-event-right">
+        <h2 class="main-event-heading">Theme nights</h2>
+        <p class="description">
+          whether it's 80's, 90's, Christmas, Halloweeen, Thai's Songkran, Mardi
+          Gras or Hawaiian, you will love our theme nights.
+        </p>
+        <div class="stars">
+          <i class="fas fa-star-of-life star"></i>
+          <i class="fas fa-star-of-life star"></i>
+          <i class="fas fa-star-of-life star"></i>
+        </div>
+      </div>
+
+      <!-- event #5 -->
+      <div class="about-event-left">
+        <img src="../images/event-img-5.jpg" />
+      </div>
+      <div class="about-event-right">
+        <h2 class="main-event-heading">Live Music</h2>
+        <p class="description">
+          People love live bands playing music while dining. We provide local
+          musician that our community want to support. Consider booking our next
+          show, a couple times a week. Enjoy dining with joyful live music.
+        </p>
+        <div class="stars">
+          <i class="fas fa-star-of-life star"></i>
+          <i class="fas fa-star-of-life star"></i>
+          <i class="fas fa-star-of-life star"></i>
+        </div>
+      </div>
+
+      <!-- event #6 -->
+      <div class="about-event-left">
+        <img src="../images/event-img-6.jpg" />
+      </div>
+      <div class="about-event-right">
+        <h2 class="main-event-heading">Love Is In The Air</h2>
+        <p class="description">
+          You don’t have to wait for Valentine’s Day to create a romantic
+          tradition. Official Love Night with special deals for two.
+        </p>
+        <div class="stars">
+          <i class="fas fa-star-of-life star"></i>
+          <i class="fas fa-star-of-life star"></i>
+          <i class="fas fa-star-of-life star"></i>
+        </div>
+      </div>
+
+      <!-- event #7 -->
+      <div class="about-event-left">
+        <img src="../images/event-img-7.jpg" />
+      </div>
+      <div class="about-event-right">
+        <h2 class="main-event-heading">Groups VIP</h2>
+        <p class="description">
+          Birthday party, wedding party, promotion, business meeting, or welcome
+          events. Treating your family, friends or business partners like VIPs.
+          Group reservations are available for small groups of 10 guests to 350
+          for lunch, dinner or 300 for receptions. Host a VIP only event with
+          live music and new menu items for your loves and business meeting.’
+        </p>
+        <div class="stars">
+          <i class="fas fa-star-of-life star"></i>
+          <i class="fas fa-star-of-life star"></i>
+          <i class="fas fa-star-of-life star"></i>
+        </div>
+      </div>
+
+      <!-- event #8 -->
+      <div class="about-event-left">
+        <img src="../images/event-img-8.jpg" />
+      </div>
+      <div class="about-event-right">
+        <h2 class="main-event-heading">Cooking Classes</h2>
+        <p class="description">
+          People love our food, but they can’t eat at our restaurant every
+          night. We host cooking classes and teach people how to make our
+          dishes, while giving a cookbook to take home. Follow our social-media for upcoming events.
+        </p>
+        <div class="stars">
+          <i class="fas fa-star-of-life star"></i>
+          <i class="fas fa-star-of-life star"></i>
+          <i class="fas fa-star-of-life star"></i>
+        </div>
+      </div>
+    </section>
+    <!-- End of Events -->
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-header">
-                <a href="#" class="logo"><i class="fas fa-utensils"></i></a>
-                <div>
-                    <h1 class="main-name">Busaba</h1>
-                    <p class="sub-name">Restaurant</p>
-                </div>
+      <div class="footer-header">
+        <a href="#" class="logo"><i class="fas fa-utensils"></i></a>
+        <div>
+          <h1 class="main-name">Busaba</h1>
+          <p class="sub-name">Restaurant</p>
         </div>
-        <div class="footer-social-media">
-            <ul class="social-media">
-                <li class="social-media-item">
-                    <a href="#" class="social-media-link">
-                        <i class="fab fa-facebook-square"></i>
-                    </a>
-                </li>
-                <li class="social-media-item">
-                    <a href="#" class="social-media-link">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </li>
-                <li class="social-media-item">
-                    <a href="#" class="social-media-link">
-                        <i class="fab fa-google-plus-square"></i>
-                    </a>
-                </li>
-                <li class="social-media-item">
-                    <a href="#" class="social-media-link">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
+      </div>
+      <div class="footer-social-media">
+        <ul class="social-media">
+          <li class="social-media-item">
+            <a href="#" class="social-media-link">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+          </li>
+          <li class="social-media-item">
+            <a href="#" class="social-media-link">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="social-media-item">
+            <a href="#" class="social-media-link">
+              <i class="fab fa-google-plus-square"></i>
+            </a>
+          </li>
+          <li class="social-media-item">
+            <a href="#" class="social-media-link">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
 
-        <div class="footer-copyright">
-            <p class="footer-copyright-paragraph">
-                &copy; Copyright. Restaurant "Busaba", Teera's Design. All Rights Reserved
-            </p>
-        </div>
+      <div class="footer-copyright">
+        <p class="footer-copyright-paragraph">
+          &copy; Copyright. Restaurant "Busaba", Teera's Design. All Rights
+          Reserved
+        </p>
+      </div>
     </footer>
     <!-- End of Footer -->
-
-</body>
-
+  </body>
 </html>
