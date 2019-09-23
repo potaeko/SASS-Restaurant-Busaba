@@ -598,12 +598,17 @@ body {
 
 .card-menu {
   flex-basis: 100%;
-  position: relative;
-  overflow: hidden;
-  padding: 0 40px; }
+  overflow: visible;
+  padding: 0 100px; }
+  @media (max-width: 500px) {
+    .card-menu {
+      padding: 0 20px; } }
   .card-menu-img {
-    object-fit: cover;
-    padding-top: 40px; }
+    object-fit: fill;
+    padding-top: 60px; }
+    @media (max-width: 500px) {
+      .card-menu-img {
+        padding-top: 20px; } }
 
 .header-gallery {
   width: 100%;

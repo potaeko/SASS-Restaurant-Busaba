@@ -2,15 +2,23 @@
 //gallery
 .card-menu {
     flex-basis: 100%;
-    position: relative;
+    // position: relative;
     //hide orange overlay cover
-    overflow: hidden;
-    padding: 0 40px;
+    overflow: visible;
+    padding: 0 100px;
+
+    @media(max-width:500px){
+        padding: 0 20px;
+    }
 
     //make img fit in
     &-img {
         @extend %fullSpace;
-        object-fit: cover;
-        padding-top: 40px;
+        object-fit: fill;
+        padding-top: 60px;
+
+        @media(max-width:500px){
+            padding-top: 20px;
+        }
     }
 }
