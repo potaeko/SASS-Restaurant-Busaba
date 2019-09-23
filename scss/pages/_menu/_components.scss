@@ -1,0 +1,16 @@
+
+//gallery
+.card-menu {
+    flex-basis: 100%;
+    position: relative;
+    //hide orange overlay cover
+    overflow: hidden;
+    padding: 0 40px;
+
+    //make img fit in
+    &-img {
+        @extend %fullSpace;
+        object-fit: cover;
+        padding-top: 40px;
+    }
+}

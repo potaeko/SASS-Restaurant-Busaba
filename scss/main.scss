@@ -2,6 +2,14 @@
 @import "layout";
 @import "components";
 
+//story
+@import "pages/_story/layout";
+@import "pages/_story/components";
+
+//Menu
+@import "pages/_menu/layout";
+@import "pages/_menu/components";
+
 
 //gallery
 @import "pages/_gallery/layout";

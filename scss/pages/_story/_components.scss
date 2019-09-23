@@ -1,0 +1,19 @@
+
+
+//gallery
+.story-card {
+    width: 33.3333%;
+    height: 33vw;
+    position: relative;
+    //hide orange overlay cover
+    overflow: hidden;
+
+    //make img fit in
+    &-img {
+        @extend %fullSpace;
+        object-fit: cover;
+        opacity: 0.5;
+    }
+}
+        
+    
